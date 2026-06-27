@@ -12,7 +12,7 @@ bool pali(string &s,int start,int end){
 }
 
 int main(){
-    string s="madem";
+    string s="madam";
     int start=0;
     int end=s.size()-1;
     bool palindrome=pali(s,start,end);
