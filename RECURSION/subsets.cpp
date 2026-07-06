@@ -37,3 +37,18 @@ int main(){
         cout<<endl;
     }
 }
+
+
+// //                    v=123,idx=0,size=3,temp={},ans
+//                              index = 0 (1)
+//                           /                    \
+//                     Don't 1                  Take 1
+//                      {}                      {1}
+//                 index=1                    index=1
+//                /      \                   /         \
+//           Don't 2    Take 2            Don't 2       Take 2
+//             {}        {2}            {1}              {1,2}
+//          index=2   index=2        index=2           index=2
+//          /    \      /   \         /   \           /         \
+//       D3      T3   D3    T3      D3    T3        D3           T3
+//       {}      {3} {2} {2,3}     {1} {1,3}     {1,2}             {1,2,3}
