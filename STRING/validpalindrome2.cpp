@@ -28,7 +28,7 @@ bool checkpalindromeafterremovingone(string s,int start,int end){
 
 int main(){
     // leet code -680 givrn a  string check wheater after removing only one character from anywhere does remain string is palindrome or not
-    string s="abcd";
+    string s="abca";
     int start=0;
     int end=s.size()-1;
     bool result=false;
