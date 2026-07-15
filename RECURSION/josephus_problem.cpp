@@ -3,6 +3,7 @@ using namespace std;
 
  int winner(int n,int k){
     // base case
+    // "I cannot calculate my answer until winner(n-1) tells me its answer."
     if(n==1){
         // we all know we only participant left its the winner its 0 index person
         return 0;
