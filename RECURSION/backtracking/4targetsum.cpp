@@ -19,7 +19,7 @@ int main(){
 
 //     At every index ask only one question:
 //    "Take this element or skip it?"
-//     If either choice reaches target == 0, return true immediately (|| short-circuits).
+//     If either choice reaches target == 0, return true immediately (  || short-circuits )
 
     vector<int>v={3,4,5,6};
     int target=12;

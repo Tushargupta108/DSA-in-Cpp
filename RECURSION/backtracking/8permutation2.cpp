@@ -15,6 +15,7 @@ void permutation(vector<int>&arr,vector<vector<int>>& ans,int index){
      if(used[arr[i]+10]==0){
         // if  arr element at 11th index to 20th is not visited  used when baktratking on rest of its indexes
         swap(arr[index],arr[i]);
+        // ya to khud se swap hoga ya unique in right side s
         permutation(arr,ans,index+1);
         swap(arr[index],arr[i]);
         // baktraking

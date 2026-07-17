@@ -24,5 +24,36 @@ int main(){
     vector<int>arr={1,5,6};
     
     cout<<"totoalno of ways to sum N  "<<countwaystosumN(arr,N);
+//                                         count(7)
+//                               /         |         \
+//                             1/         5|         6\
+//                             /           |           \
+//                      count(6)      count(2)      count(1)
+//                   /    |    \       /   |   \      /  |  \
+//                 1/    5|    6\    1/   5|   6\   1/ 5| 6\
+//               /        |       \   /     |     \  /   |   \
+//          count(5)  count(1) count(0) count(1) -3   -4 count(0) -4 -5
+//          / |  \        |        ✅      |               ✅
+//        1/ 5| 6\      1|        (1+6)   1|
+//       /    |    \      |               |
+//  count(4) count(0) -1 count(0)       count(0)
+//    /|\      ✅          ✅              ✅
+//   / | \
+// 1/ 5| 6\
+// /   |   \
+// count(3) -1 -2
+//  / | \
+// 1/ 5| 6\
+// /   |   \
+// count(2) -2 -3
+//  / | \
+// 1/ 5| 6\
+// /   |   \
+// count(1) -3 -4
+//  / | \
+// 1/ 5| 6\
+// /   |   \
+// count(0) -4 -5
+//    ✅
     
 }
