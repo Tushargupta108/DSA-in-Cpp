@@ -11,6 +11,7 @@ void permutation(vector<int>&arr,vector<vector<int>>& ans,vector<bool>&visited,v
             temp.push_back(arr[i]);
             permutation(arr,ans,visited,temp);
             visited[i]=0;
+            // backtracking karne k baad branch me se saare ele rmv so next branch may aquire from next index ele
             // backtracking steps reverse what we have done before calling recursive function
             temp.pop_back();
             
