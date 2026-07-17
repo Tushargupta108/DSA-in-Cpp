@@ -11,6 +11,7 @@ using namespace std;
  }
 
 int main(){
+
     vector<int>arr={5,4,3,2,6};
     int sum=0;
     int idx=0;
