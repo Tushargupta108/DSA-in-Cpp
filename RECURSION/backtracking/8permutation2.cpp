@@ -28,7 +28,7 @@ void permutation(vector<int>&arr,vector<vector<int>>& ans,int index){
 int main(){
 //Given a collection of numbers, nums, that might contain duplicates, return all possible unique permutations in any order.
 // Example 1:
-// Input: nums = [1,1,2]
+// Input: nums = [1,1,2] only num from -10 to +10 can lie in given arrray 
 // Output:
 // [[1,1,2],
 //  [1,2,1],

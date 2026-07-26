@@ -6,6 +6,8 @@ void permutation(vector<int>&arr,vector<vector<int>>& ans,int index){
     return;
 }
     for(int i=index;i<arr.size();i++){
+        // swapping to reduce visited array and choosing which will come at that idx either combi strts from 1 2 or 3
+        // swapping at every index starts from that index as to prevent repetation of ele 
          swap(arr[i],arr[index]);
         //   i start from same idx swap index with index and rest with all ele in right side after index
          permutation(arr,ans,index+1);
