@@ -16,8 +16,11 @@ if(i==n-1 && j==n-1){
 visited[i][j]=true;
 // downward
 path.push_back('D');
+// PAHLE TEMP M DALO KAHAN JAOGE THEN US PAR JAO
 solve(maze,n,visited,path,ans,i+1,j);
 path.pop_back();
+// JAB INVALID CELL HO JIS PAR AAYE  THEY AB WAHIN CELL TO 4 DIRECTION COMPARE KRO THEN MARK IT UNVISITED
+
 // left
 path.push_back('L');
 solve(maze,n,visited,path,ans,i,j-1);
@@ -34,6 +37,14 @@ path.pop_back();
 
 // backtracking 
 visited[i][j]=false;
+// That promise remains true while exploring:
+// Down ✅
+// Left ✅
+// Right ✅
+// Up ✅
+// Only after all four are completely finished do you say:
+// visited[A] = false;
+// because now you're leaving A and returning to its parent.
 
 
 
@@ -52,6 +63,7 @@ vector<vector<int>>maze={{1, 0, 0, 0},
 int n=maze.size();                         
 
 vector<vector<bool> >visited(n, vector<bool>(n, 0));    
+// this used to keep recorded which is visited
 string path;
 vector<string>ans;
 int i=0;
