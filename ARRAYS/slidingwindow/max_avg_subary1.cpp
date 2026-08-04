@@ -19,4 +19,5 @@ int main(){
     }
     avg=(double)maxavg/4;
     cout<<avg;
+    // leetcode problem
 }
