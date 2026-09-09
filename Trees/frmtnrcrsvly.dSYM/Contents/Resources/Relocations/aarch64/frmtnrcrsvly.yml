@@ -1,0 +1,11 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/tushargupta/Documents/DSA-in-Cpp/Trees/frmtnrcrsvly'
+relocations:
+  - { offset: 0x2D55E, size: 0x8, addend: 0x0, symName: __ZStL8__ioinit, symObjAddr: 0xD3632, symBinAddr: 0x10000C050, symSize: 0x0 }
+  - { offset: 0x2E1DC, size: 0x8, addend: 0x0, symName: __GLOBAL__sub_I_frmtnrcrsvly.cpp, symObjAddr: 0x200, symBinAddr: 0x100007DE0, symSize: 0x14 }
+  - { offset: 0x2E1F4, size: 0x8, addend: 0x0, symName: __Z41__static_initialization_and_destruction_0v, symObjAddr: 0x1C4, symBinAddr: 0x100007DA4, symSize: 0x3C }
+  - { offset: 0x2E213, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x144, symBinAddr: 0x100007D68, symSize: 0x3C }
+  - { offset: 0x2E247, size: 0x8, addend: 0x0, symName: __Z10BinaryTreev, symObjAddr: 0x34, symBinAddr: 0x100007C58, symSize: 0x110 }
+  - { offset: 0x2E2AB, size: 0x8, addend: 0x0, symName: __ZN4NodeC1Ei, symObjAddr: 0x0, symBinAddr: 0x100007C24, symSize: 0x34 }
+...
