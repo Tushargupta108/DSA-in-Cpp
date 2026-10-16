@@ -36,4 +36,7 @@ int main(){
     //                      return 1
     // Notice the take branch always stays on the same index because we may choose the same element again.
     
+
+    //jisme ele repeat kare usme index wahi rakho and target se ghatate rho  aur jo nahi lene unhe idex badhao only
 }
+

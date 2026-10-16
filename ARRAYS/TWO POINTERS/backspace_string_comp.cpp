@@ -1,8 +1,67 @@
 // IMPORTANT :leetcode 844
 #include<bits/stdc++.h>
 using namespace std;
-// approach 1=>
 
+bool backspaceCompare(string s, string t) {
+
+    int i = s.size() - 1;
+    int j = t.size() - 1;
+
+    while (i >= 0 || j >= 0) {
+        // this outer loop is execute to check every char from both string  not a single last char
+
+        // Find next valid character in s
+        int skipS = 0;
+        while (i >= 0) {
+
+            if (s[i] == '#') {
+                skipS++;
+                i--;
+            }
+            else if (skipS > 0) {
+                skipS--;
+                i--;
+            }
+            else {
+                break;
+            }
+        }
+
+        // Find next valid character in t
+        int skipT = 0;
+        while (j >= 0) {
+
+            if (t[j] == '#') {
+                skipT++;
+                j--;
+            }
+            else if (skipT > 0) {
+                skipT--;
+                j--;
+            }
+            else {
+                break;
+               // every timee it checks valid elemet from end  in both string if not same then retrun false immediately
+            }
+        }
+
+        // Compare current valid characters
+        char chS = (i >= 0) ? s[i] : '$';
+        char chT = (j >= 0) ? t[j] : '$';
+
+        if (chS != chT)
+            return false;
+
+        // Move to previous character
+        i--;
+        j--;
+    }
+
+    return true;
+    
+}
+
+// approach 1=>
 // string check(string a){
 //     int i=0;
 //     string temp="";
@@ -31,46 +90,8 @@ int main(){
     // else{
     //     cout<<"False";
     // }
-     int i=s.size()-1;
-     int j=t.size()-1;
-      int  skip_i=0;
-       int  skip_j=0;
-     while(i>=0){
-       
-        if(s[i]=='#'){
-            skip_i++;
-            i--;
-        }
-        else if(skip_i>0){
-            skip_i--;
-            i--;
-        }
-        else{
-            break;
-        }
-     }    
-    //  similarly check for string t
-    while(j>=0){
-       
-        if(t[j]=='#'){
-            skip_j++;
-            j--;
-        }
-        else if(skip_j>0){
-            skip_j--;
-            j--;
-        }
-        else{
-            break;
-            // every timee it checks valid elemet from end  in both string if not same then retrun false immediately
-        }
-     } 
-     char first_s=i<0?'$':s[i];
-     char first_t=j<0?'$':t[j];
-      if(first_s==first_t){
-         cout<<"True";
-      }
-      else{
-        cout<<"False";
-      }
+   if (backspaceCompare(s, t))
+        cout << "True";
+    else
+        cout << "False";
 }

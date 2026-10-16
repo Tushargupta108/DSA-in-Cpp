@@ -36,7 +36,7 @@ void PostOrderTraversal(Node*root){
     
     PostOrderTraversal(root->left);
     PostOrderTraversal(root->right);
-    cout<<root->data<<" ";
+    cout<<root->data<<" 1";
 }
 
 

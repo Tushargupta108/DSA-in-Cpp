@@ -12,6 +12,7 @@ void permutation(vector<int>&arr,vector<vector<int>>& ans,int index){
    }
     
  for(int i=index;i<arr.size();i++){
+    // this helps when numbers repeate if they they repate they definately make same permutation which earlier start from same ele
      if(used[arr[i]+10]==0){
         // if  arr element at 11th index to 20th is not visited  used when baktratking on rest of its indexes
         swap(arr[index],arr[i]);

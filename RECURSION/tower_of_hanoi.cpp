@@ -39,6 +39,9 @@ void towerofhanoi(int n,string SRC,string HLPR, string DEST){
 }
 
 int main(){
+    // poore code ka simple logic h pahle n-1 disk ko src se hlpr m rkh do 
+    // then hlpr s dest m phnch do
+    // jab last wali 1 disk backegi tab use direct src to dest 
     cout<<"enter no of disk in a source tower initially";
     int n;
     cin>>n;

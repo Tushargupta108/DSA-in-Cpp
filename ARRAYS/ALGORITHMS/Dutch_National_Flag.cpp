@@ -1,3 +1,4 @@
+// TODO : leetcode sorting colors
 // divide array in four parts
 // 0-l-1 contain series of 0 
 // l-mid contain series of 1
@@ -35,3 +36,5 @@ int main(){
         cout<<x<<" ";
     }
 }
+// this is the logic which is used  to sort array in O(N) time complexity its limitation is it works only for 3 elements means diviosn i 4th but but 
+// mainly 3 part as mid se high unsorted part becomes zero after shrink
