@@ -1,0 +1,23 @@
+# macOS files
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Compiled C/C++ executables and object files
+*.o
+*.a
+*.so
+*.dylib
+*.out
+*.exe
+
+# macOS debug symbol bundles
+*.dSYM/
+
+# Local editor settings
+.vscode/
+
+# Common build output directories
+build/
+cmake-build-*/
